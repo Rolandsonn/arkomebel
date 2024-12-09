@@ -1,0 +1,27 @@
+.advan {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 13px 20px;
+    max-width: 350px;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .advan {
+    &__list {
+      flex-direction: column;
+      gap: 30px;
+    }
+    &__item {
+      max-width: 100%;
+    }
+  }
+}
